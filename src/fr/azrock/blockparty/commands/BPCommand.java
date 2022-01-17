@@ -51,10 +51,10 @@ public class BPCommand extends ACommand {
 			if(!player.hasPermission(cmdArg.permission())) return;
 
 
-			ArrayList<String> al = new ArrayList<String>();		//Declare new ArrayList al
-			al.addAll(Arrays.asList(args));  					//Initialize new arrayList al with the args array's content.
-			al.remove(0);										//Remove first argument (eg. /parcours add Test, remove 'add' argument)
-			args = al.toArray(new String[al.size()]);			//Set new args to the modified ArrayList al in order to compensate for seperate arg classes.
+			ArrayList<String> al = new ArrayList<String>();  //Declare new ArrayList al
+			al.addAll(Arrays.asList(args));                  //Initialize new arrayList al with the args array's content.
+			al.remove(0);                                    //Remove first argument (eg. /parcours add Test, remove 'add' argument)
+			args = al.toArray(new String[al.size()]);        //Set new args to the modified ArrayList al in order to compensate for seperate arg classes.
 
 			try {
 				cmdArg.execute(player, args);
