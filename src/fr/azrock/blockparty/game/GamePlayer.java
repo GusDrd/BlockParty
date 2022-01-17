@@ -51,7 +51,7 @@ public class GamePlayer {
 	
 	
 	/**
-	 * @return true (if player is a spectator)
+	 * Set player to spectator mode
 	 * */
 	public void setSpectator() {
 		this.spectator = true;
