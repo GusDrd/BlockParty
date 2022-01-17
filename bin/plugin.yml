@@ -1,9 +1,0 @@
-name: BlockParty
-main: fr.azrock.blockpary.BlockParty
-version: 0.1
-author: Azrock
-
-commands:
-  blockparty:
-    description: BlockParty commands.
-    aliases: bp
